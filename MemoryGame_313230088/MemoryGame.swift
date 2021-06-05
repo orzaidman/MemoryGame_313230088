@@ -86,13 +86,9 @@ class MemoryGame {
         }
         
         if cardsShown.count == cards.count {
-            finishGame()
+            ifFinish = true
         }
         return ifFinish
     }
     
-    func finishGame(){
-        ifFinish = true
-        
-    }
 }

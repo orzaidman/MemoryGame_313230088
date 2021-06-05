@@ -26,32 +26,32 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="BQ8-Tc-GrA"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="rqa-Rb-upH"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="BQ8-Tc-GrA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gy-Nx-1M1">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="dqC-ai-pTC"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="66O-hw-Fdr"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="dqC-ai-pTC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdh-7l-YdF">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="KTo-Ed-dqC"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="3Fl-Wb-ZSZ"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="KTo-Ed-dqC"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za6-k6-2kE">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="il7-xV-8MS"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="hnf-JI-ujm"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="il7-xV-8MS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -63,32 +63,32 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="g8U-2X-u4A"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="uZr-4b-oRo"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="g8U-2X-u4A"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-Hz-4lM">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="RwC-rh-YdV"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="qKR-8m-i9n"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="RwC-rh-YdV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7v-wU-uqs">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="sUS-ZR-HP9"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="AQL-zs-jnb"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="sUS-ZR-HP9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEi-Qq-tpo">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="i6f-RD-ftr"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="abb-he-osq"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="i6f-RD-ftr"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -100,32 +100,32 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="cyh-GF-aji"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="TSJ-ex-gHA"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="cyh-GF-aji"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb3-SQ-U6C">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Vw8-xa-hBJ"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="FeH-iX-Rzv"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Vw8-xa-hBJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSQ-5Z-5UQ">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="6WN-LA-DR0"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="6fy-c7-tuN"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="6WN-LA-DR0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQw-Hc-Qsw">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="paG-v7-8fS"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="69Q-N4-3VC"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="paG-v7-8fS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -137,32 +137,32 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Chh-cx-oJE"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="kKC-BA-eOi"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Chh-cx-oJE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azk-Qg-J74">
                                                 <rect key="frame" x="101" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Rpf-ir-CS3"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="emS-Om-qpT"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Rpf-ir-CS3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-PA-FWI">
                                                 <rect key="frame" x="202" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Wan-Fi-9hB"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="6CJ-tN-tf1"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Wan-Fi-9hB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRw-vI-Oox">
                                                 <rect key="frame" x="303" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
-                                                    <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="vJB-t7-BDc"/>
                                                     <action selector="onBackPressed:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Ioy-q4-IGn"/>
+                                                    <action selector="onClickCard:" destination="9qz-Us-aaa" eventType="touchUpInside" id="vJB-t7-BDc"/>
                                                 </connections>
                                             </button>
                                         </subviews>

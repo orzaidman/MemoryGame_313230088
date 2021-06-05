@@ -2,21 +2,17 @@
 import Foundation
 
 class DataManager{
-    static let SCORE_LIST_KEY = "SCORE_LIST_KEY"
     
-    static func fromJsonToScoresList(scoresListJson: String) ->[score]{
-        let decoder = JSONDecoder()
+    static func fromJson(scoresListJson: String) ->[score]{
         let data = Data(scoresListJson.utf8)
         do {
-            return try decoder.decode([score].self, from: data)
-            
+            return try JSONDecoder().decode([score].self, from: data)
         } catch {
-            print("somthing went wrong in fromJsonToScoresList")
         }
         return [score]()
     }
     
-    static func fromScoresListToJson(scoresList : [score]) -> String{
+    static func toJson(scoresList : [score]) -> String{
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
         let data = try! encoder.encode(scoresList)
@@ -26,21 +22,20 @@ class DataManager{
     }
     
     
-    static func getDataFromtorage() -> [score]{
+    static func getData() -> [score]{
         
-        let scoresListJson = UserDefaults.standard.string(forKey: SCORE_LIST_KEY)
-        
+        let scoresListJson = UserDefaults.standard.string(forKey: "scores")
         if let safeHighScoresJson = scoresListJson {
-            return self.fromJsonToScoresList(scoresListJson: safeHighScoresJson)
+            return self.fromJson(scoresListJson: safeHighScoresJson)
         }
         
         return [score]()
     }
     
-    static func saveScoresListInStorage(scoresList : [score]) {
+    static func saveData(scoresList : [score]) {
     
-        let highScoresJson: String = self.fromScoresListToJson(scoresList: scoresList)
-        UserDefaults.standard.set(highScoresJson, forKey: SCORE_LIST_KEY)
+        let highScoresJson: String = self.toJson(scoresList: scoresList)
+        UserDefaults.standard.set(highScoresJson, forKey: "scores")
     }
     
 }

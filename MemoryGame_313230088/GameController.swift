@@ -34,11 +34,9 @@ class GameController: UIViewController {
         var cards = [Card]()
         var buttons = [UIButton]()
         var moves: Int = 0
-        var playerName: String = ""
-        var ifFinish: Bool = false
+        var isFinishGame: Bool = false
         var time = 0
         var timer = Timer()
-        var hideImage = UIImage()
         var scores = [score]()
         var myLocation : PlayerLocation!
         var locationManager: CLLocationManager!
@@ -46,7 +44,6 @@ class GameController: UIViewController {
 
         override func viewDidLoad() {
             super.viewDidLoad()
-            hideImage = #imageLiteral(resourceName: "back")
             buttons = [game_BTN_card1,game_BTN_card2,game_BTN_card3,game_BTN_card4,game_BTN_card5,game_BTN_card6,game_BTN_card7,game_BTN_card8,
                         game_BTN_card9,game_BTN_card10,game_BTN_card11,game_BTN_card12,game_BTN_card13,game_BTN_card14,game_BTN_card15,game_BTN_card16]
       
@@ -64,22 +61,13 @@ class GameController: UIViewController {
         super.viewDidDisappear(animated)
         
         if game.isPlaying {
-            resetGame()
+            timer.invalidate()
+            game.restartGame()
+            initGame()
         }
     }
 
-    func startTimer() {
-        timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
-    }
-    func storeData(){
-        self.scores = DataManager.getDataFromtorage()
-        let nameTemp = UserDefaults.standard.string(forKey: "name")
 
-        let score : score = score( time : self.time, loc: self.myLocation, name : nameTemp!)
-        insertScore(myScore : score)
-        DataManager.saveScoresListInStorage(scoresList: self.scores)
-    }
 
     func insertScore(myScore : score){
         
@@ -93,7 +81,10 @@ class GameController: UIViewController {
         }
         
         if(scores.count > 10){
-            scores.remove(at: scores.count - 1)
+        let min = scores.min { a, b in a.time < b.time }
+            let index = scores.firstIndex{$0 === min}
+            scores.remove(at: index!)
+            
         }
         
     }
@@ -114,26 +105,26 @@ class GameController: UIViewController {
     }
 
 
-    @IBAction func onBackPressed(_ sender: UIButton) {
-        if let nav = self.navigationController {
-                   nav.popViewController(animated: true)
-               }
-    }
 
 
-    @IBAction func cardClicked(_ sender: UIButton) {
+    @IBAction func onClickCard(_ sender: UIButton) {
         self.moves+=1
         game_BTN_moves.text = String(moves)
         sender.imageView?.layer.transform = CATransform3DIdentity
-        ifFinish = game.cardSelected(findCardByTag(button :sender))
-        if (ifFinish){
+        isFinishGame = game.cardSelected(findCardByTag(button :sender))
+        if (isFinishGame){
             finishGame()
         }
     }
 
     func finishGame(){
         timer.invalidate()
-        storeData()
+        self.scores = DataManager.getData()
+        let nameTemp = UserDefaults.standard.string(forKey: "name")
+
+        let score : score = score( time : self.time, loc: self.myLocation, name : nameTemp!)
+        insertScore(myScore : score)
+        DataManager.saveData(scoresList: self.scores)
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "maxScoreController") as! maxScoreController
         self.present(nextViewController, animated:true, completion:nil)
@@ -153,19 +144,14 @@ class GameController: UIViewController {
     }
 
     func initGame() {
-        self.startTimer()
+        timer.invalidate()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateTimer), userInfo: nil, repeats: true)
         buttons.shuffle()
         time = 0
         moves = 0
         game_BTN_moves.text = String(moves)
         cards = game.newGame(buttonsArray: self.buttons)
         hideCards()
-    }
-
-    func resetGame() {
-        timer.invalidate()
-        game.restartGame()
-        initGame()
     }
 
 

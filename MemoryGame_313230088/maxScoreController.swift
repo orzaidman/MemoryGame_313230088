@@ -14,7 +14,7 @@ class maxScoreController:  UIViewController, UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         MyMap.showsUserLocation = true
-        scoresList = DataManager.getDataFromtorage()
+        scoresList = DataManager.getData()
         addLocationsToMap()
         setupTable()
     }
