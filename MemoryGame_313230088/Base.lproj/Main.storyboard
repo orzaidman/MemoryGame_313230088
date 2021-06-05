@@ -8,42 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game Controller-->
         <scene sceneID="Lir-nj-CXU">
             <objects>
-                <viewController id="9qz-Us-aaa" customClass="ViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="GameController" storyboardIdentifier="GameController" id="9qz-Us-aaa" customClass="GameController" customModule="MemoryGame_313230088" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VC6-Jc-fDO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8fg-1R-FC7" userLabel="Data">
-                                <rect key="frame" x="10" y="64" width="404" height="76.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tma-Ko-Qlb">
-                                        <rect key="frame" x="0.0" y="0.0" width="404" height="36.5"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
-                                        <color key="textColor" systemColor="linkColor"/>
-                                        <color key="highlightedColor" systemColor="groupTableViewBackgroundColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGG-j6-uqD">
-                                        <rect key="frame" x="0.0" y="36.5" width="404" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="YI6-cY-bUI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
-                                        <color key="textColor" systemColor="linkColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mH4-uz-lb9">
-                                <rect key="frame" x="10" y="200" width="394" height="666"/>
+                                <rect key="frame" x="10" y="54" width="394" height="742"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GuZ-PB-Fnb">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="163"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="182"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wri-pI-wj1">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="BQ8-Tc-GrA"/>
@@ -51,7 +31,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gy-Nx-1M1">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="dqC-ai-pTC"/>
@@ -59,7 +39,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdh-7l-YdF">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="202" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="KTo-Ed-dqC"/>
@@ -67,7 +47,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za6-k6-2kE">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="303" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="il7-xV-8MS"/>
@@ -77,10 +57,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q6W-Ae-w2f">
-                                        <rect key="frame" x="0.0" y="168" width="394" height="162.5"/>
+                                        <rect key="frame" x="0.0" y="187" width="394" height="181.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NCM-NY-ofj">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="g8U-2X-u4A"/>
@@ -88,7 +68,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xC-Hz-4lM">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="RwC-rh-YdV"/>
@@ -96,7 +76,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7v-wU-uqs">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="202" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="sUS-ZR-HP9"/>
@@ -104,7 +84,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEi-Qq-tpo">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="303" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="i6f-RD-ftr"/>
@@ -114,10 +94,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9dn-fx-9RJ">
-                                        <rect key="frame" x="0.0" y="335.5" width="394" height="163"/>
+                                        <rect key="frame" x="0.0" y="373.5" width="394" height="182"/>
                                         <subviews>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXu-F8-X6C">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="cyh-GF-aji"/>
@@ -125,7 +105,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb3-SQ-U6C">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Vw8-xa-hBJ"/>
@@ -133,7 +113,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSQ-5Z-5UQ">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="202" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="6WN-LA-DR0"/>
@@ -141,7 +121,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQw-Hc-Qsw">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="163"/>
+                                                <rect key="frame" x="303" y="0.0" width="91" height="182"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="paG-v7-8fS"/>
@@ -151,10 +131,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="snj-Is-2bm">
-                                        <rect key="frame" x="0.0" y="503.5" width="394" height="162.5"/>
+                                        <rect key="frame" x="0.0" y="560.5" width="394" height="181.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZb-oS-EyZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Chh-cx-oJE"/>
@@ -162,7 +142,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azk-Qg-J74">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Rpf-ir-CS3"/>
@@ -170,7 +150,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-PA-FWI">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="202" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="Wan-Fi-9hB"/>
@@ -178,7 +158,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRw-vI-Oox">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="162.5"/>
+                                                <rect key="frame" x="303" y="0.0" width="91" height="181.5"/>
                                                 <state key="normal" title="Button" backgroundImage="back"/>
                                                 <connections>
                                                     <action selector="cardClicked:" destination="9qz-Us-aaa" eventType="touchUpInside" id="vJB-t7-BDc"/>
@@ -189,49 +169,87 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="eGm-4i-DVR">
+                                <rect key="frame" x="10" y="802" width="394" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" translatesAutoresizingMaskIntoConstraints="NO" id="Irc-zn-7fN">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7q7-MA-sUY"/>
+                                            <constraint firstAttribute="height" constant="50" id="Ptn-0h-sSG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tma-Ko-Qlb">
+                                        <rect key="frame" x="78" y="0.0" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="YUm-EX-XLy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <color key="highlightedColor" systemColor="groupTableViewBackgroundColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moves" translatesAutoresizingMaskIntoConstraints="NO" id="hsH-l3-x6V">
+                                        <rect key="frame" x="206" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="rAB-f8-jl5"/>
+                                            <constraint firstAttribute="height" constant="50" id="vWA-zW-Ddh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGG-j6-uqD">
+                                        <rect key="frame" x="274" y="0.0" width="120" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="YI6-cY-bUI"/>
+                                            <constraint firstAttribute="width" constant="120" id="icW-L5-F3Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="28"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dOM-7x-rJY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mH4-uz-lb9" firstAttribute="top" secondItem="VC6-Jc-fDO" secondAttribute="top" constant="200" id="153-oH-KSp"/>
-                            <constraint firstAttribute="trailing" secondItem="8fg-1R-FC7" secondAttribute="trailing" id="1fN-eo-JVt"/>
+                            <constraint firstItem="dOM-7x-rJY" firstAttribute="bottom" secondItem="eGm-4i-DVR" secondAttribute="bottom" constant="10" id="0NB-aa-4ts"/>
                             <constraint firstItem="mH4-uz-lb9" firstAttribute="leading" secondItem="dOM-7x-rJY" secondAttribute="leading" constant="10" id="96Q-Yy-Zab"/>
-                            <constraint firstItem="8fg-1R-FC7" firstAttribute="leading" secondItem="dOM-7x-rJY" secondAttribute="leading" constant="10" id="Fda-lJ-kOC"/>
-                            <constraint firstItem="8fg-1R-FC7" firstAttribute="top" secondItem="dOM-7x-rJY" secondAttribute="top" constant="20" id="Zar-3i-Hyb"/>
-                            <constraint firstAttribute="bottom" secondItem="mH4-uz-lb9" secondAttribute="bottom" constant="30" id="ngu-cg-adY"/>
+                            <constraint firstItem="eGm-4i-DVR" firstAttribute="leading" secondItem="dOM-7x-rJY" secondAttribute="leading" constant="10" id="9kF-Ue-IHG"/>
+                            <constraint firstItem="mH4-uz-lb9" firstAttribute="top" secondItem="dOM-7x-rJY" secondAttribute="top" constant="10" id="LLx-mF-iEL"/>
+                            <constraint firstItem="dOM-7x-rJY" firstAttribute="trailing" secondItem="eGm-4i-DVR" secondAttribute="trailing" constant="10" id="aRM-ra-GbE"/>
+                            <constraint firstAttribute="bottom" secondItem="mH4-uz-lb9" secondAttribute="bottom" constant="100" id="ngu-cg-adY"/>
                             <constraint firstItem="dOM-7x-rJY" firstAttribute="trailing" secondItem="mH4-uz-lb9" secondAttribute="trailing" constant="10" id="oJO-3D-Vym"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WyR-oC-JJq"/>
                     <connections>
-                        <outlet property="Main_Game_LBL_card1" destination="Wri-pI-wj1" id="Rz5-7n-GDK"/>
-                        <outlet property="Main_Game_LBL_card10" destination="nb3-SQ-U6C" id="P3c-9d-9Sy"/>
-                        <outlet property="Main_Game_LBL_card11" destination="CSQ-5Z-5UQ" id="Hdn-p8-ihi"/>
-                        <outlet property="Main_Game_LBL_card12" destination="NQw-Hc-Qsw" id="O1h-d7-7D4"/>
-                        <outlet property="Main_Game_LBL_card13" destination="iZb-oS-EyZ" id="iuD-lm-esE"/>
-                        <outlet property="Main_Game_LBL_card14" destination="azk-Qg-J74" id="LGZ-Xo-qVu"/>
-                        <outlet property="Main_Game_LBL_card15" destination="LgU-PA-FWI" id="4ut-G5-hoQ"/>
-                        <outlet property="Main_Game_LBL_card16" destination="KRw-vI-Oox" id="lmM-58-BkZ"/>
-                        <outlet property="Main_Game_LBL_card2" destination="2gy-Nx-1M1" id="SEO-BI-j5P"/>
-                        <outlet property="Main_Game_LBL_card3" destination="Rdh-7l-YdF" id="UIc-WU-ILn"/>
-                        <outlet property="Main_Game_LBL_card4" destination="Za6-k6-2kE" id="WG8-E7-cnk"/>
-                        <outlet property="Main_Game_LBL_card5" destination="NCM-NY-ofj" id="fKy-ic-yvj"/>
-                        <outlet property="Main_Game_LBL_card6" destination="7xC-Hz-4lM" id="aWu-iz-PHo"/>
-                        <outlet property="Main_Game_LBL_card7" destination="N7v-wU-uqs" id="Vtx-aX-23M"/>
-                        <outlet property="Main_Game_LBL_card8" destination="ZEi-Qq-tpo" id="pSh-pk-Qcq"/>
-                        <outlet property="Main_Game_LBL_card9" destination="DXu-F8-X6C" id="4d9-xI-0fQ"/>
-                        <outlet property="Main_Game_LBL_moves" destination="AGG-j6-uqD" id="ZR2-a0-2pb"/>
-                        <outlet property="Main_Game_LBL_timer" destination="tma-Ko-Qlb" id="Lyo-d3-eO0"/>
+                        <outlet property="game_BTN_card1" destination="Wri-pI-wj1" id="2g7-Dr-Uzb"/>
+                        <outlet property="game_BTN_card10" destination="nb3-SQ-U6C" id="xG2-33-8yp"/>
+                        <outlet property="game_BTN_card11" destination="CSQ-5Z-5UQ" id="fTT-Le-KDU"/>
+                        <outlet property="game_BTN_card12" destination="NQw-Hc-Qsw" id="hAl-jJ-Hw3"/>
+                        <outlet property="game_BTN_card13" destination="iZb-oS-EyZ" id="Ywf-UV-QhV"/>
+                        <outlet property="game_BTN_card14" destination="azk-Qg-J74" id="J4h-T5-quD"/>
+                        <outlet property="game_BTN_card15" destination="LgU-PA-FWI" id="jKw-ut-CED"/>
+                        <outlet property="game_BTN_card16" destination="KRw-vI-Oox" id="v7k-vY-Bf2"/>
+                        <outlet property="game_BTN_card2" destination="2gy-Nx-1M1" id="YQl-UB-iQB"/>
+                        <outlet property="game_BTN_card3" destination="Rdh-7l-YdF" id="Kxk-8z-OQg"/>
+                        <outlet property="game_BTN_card4" destination="Za6-k6-2kE" id="4kc-ta-3Se"/>
+                        <outlet property="game_BTN_card5" destination="NCM-NY-ofj" id="DtR-uh-6GU"/>
+                        <outlet property="game_BTN_card6" destination="7xC-Hz-4lM" id="Xi5-Yf-BKR"/>
+                        <outlet property="game_BTN_card7" destination="N7v-wU-uqs" id="VlG-ka-O0H"/>
+                        <outlet property="game_BTN_card8" destination="ZEi-Qq-tpo" id="fAy-Hp-Vp2"/>
+                        <outlet property="game_BTN_card9" destination="DXu-F8-X6C" id="CMr-Nk-FMe"/>
+                        <outlet property="game_BTN_moves" destination="AGG-j6-uqD" id="nyW-fT-Zz5"/>
+                        <outlet property="game_BTN_timer" destination="tma-Ko-Qlb" id="KOB-Ph-DnC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFG-0H-yac" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-57" y="98"/>
         </scene>
-        <!--Start Controller-->
+        <!--Main Controller-->
         <scene sceneID="NGv-Yz-xye">
             <objects>
-                <viewController id="oPG-pr-Vhz" customClass="StartController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oPG-pr-Vhz" customClass="mainController" customModule="MemoryGame_313230088" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6h0-uU-BEa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,7 +260,7 @@
                                     <constraint firstAttribute="height" constant="60" id="bwn-uc-Dji"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
-                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HZt-6I-eAO" userLabel="Name">
@@ -254,17 +272,23 @@
                                 <rect key="frame" x="10" y="218" width="394" height="51"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                 <state key="normal" title="Play Game">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <color key="titleColor" systemColor="linkColor"/>
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="StartGame:" destination="oPG-pr-Vhz" eventType="touchUpInside" id="4bX-06-do1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-l6-2rE">
                                 <rect key="frame" x="10" y="289" width="394" height="51"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
                                 <state key="normal" title="Top 10">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <color key="titleColor" systemColor="linkColor"/>
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="gUK-cU-gtt" kind="show" id="75J-vv-XIP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0I9-52-8HZ"/>
@@ -286,16 +310,109 @@
                     </view>
                     <navigationItem key="navigationItem" id="cZJ-sW-Uym"/>
                     <connections>
-                        <outlet property="startGame_LBL_name" destination="HZt-6I-eAO" id="lh9-a3-67F"/>
+                        <outlet property="startGame_LBL_name" destination="HZt-6I-eAO" id="Yig-zQ-hNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8u-kq-Lhb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1243" y="-761"/>
         </scene>
+        <!--Max Score Controller-->
+        <scene sceneID="Ybq-Qg-aHS">
+            <objects>
+                <viewController restorationIdentifier="maxScoreController" storyboardIdentifier="maxScoreController" id="gUK-cU-gtt" customClass="maxScoreController" customModule="MemoryGame_313230088" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RHb-a8-dKb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="p4d-89-CX4">
+                                <rect key="frame" x="10" y="120" width="394" height="678"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eFv-kK-lwI">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="215.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="score" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="score" id="Cno-7a-esh" customClass="Cell" customModule="MemoryGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="24.5" width="394" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cno-7a-esh" id="Koo-Qh-eDM">
+                                                    <rect key="frame" x="0.0" y="0.0" width="394" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaF-8a-qpT">
+                                                            <rect key="frame" x="176" y="10.5" width="42" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="cell_LBL_name" destination="YaF-8a-qpT" id="5as-dB-Wtv"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rFF-cO-nsW">
+                                        <rect key="frame" x="0.0" y="231.5" width="394" height="215"/>
+                                    </mapView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NV-BH-M7q">
+                                        <rect key="frame" x="0.0" y="462.5" width="394" height="215.5"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="35"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onBackPressed:" destination="gUK-cU-gtt" eventType="touchUpInside" id="WbD-Oh-uK5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rFF-cO-nsW" firstAttribute="top" secondItem="eFv-kK-lwI" secondAttribute="bottom" constant="10" id="OKl-Ae-kkQ"/>
+                                    <constraint firstItem="rFF-cO-nsW" firstAttribute="top" secondItem="eFv-kK-lwI" secondAttribute="bottom" constant="10" id="hkm-SC-ojm"/>
+                                    <constraint firstItem="eFv-kK-lwI" firstAttribute="top" secondItem="p4d-89-CX4" secondAttribute="top" constant="10" id="uob-Zw-fo7"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2Q-Qh-MwH">
+                                <rect key="frame" x="10" y="10" width="394" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="kmP-J8-Fj2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="50"/>
+                                <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GYW-AH-62g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e2Q-Qh-MwH" firstAttribute="leading" secondItem="GYW-AH-62g" secondAttribute="leading" constant="10" id="2AD-yc-udq"/>
+                            <constraint firstItem="GYW-AH-62g" firstAttribute="trailing" secondItem="e2Q-Qh-MwH" secondAttribute="trailing" constant="10" id="TJG-rV-NBL"/>
+                            <constraint firstItem="p4d-89-CX4" firstAttribute="leading" secondItem="GYW-AH-62g" secondAttribute="leading" constant="10" id="ZbV-GD-dZc"/>
+                            <constraint firstItem="p4d-89-CX4" firstAttribute="top" secondItem="e2Q-Qh-MwH" secondAttribute="bottom" constant="50" id="fcJ-1b-CcP"/>
+                            <constraint firstItem="GYW-AH-62g" firstAttribute="trailing" secondItem="e2Q-Qh-MwH" secondAttribute="trailing" constant="10" id="glN-zi-WCQ"/>
+                            <constraint firstAttribute="trailing" secondItem="p4d-89-CX4" secondAttribute="trailing" constant="10" id="hyO-Um-8g6"/>
+                            <constraint firstItem="e2Q-Qh-MwH" firstAttribute="top" secondItem="GYW-AH-62g" secondAttribute="top" constant="10" id="j9c-JA-OQb"/>
+                            <constraint firstItem="GYW-AH-62g" firstAttribute="bottom" secondItem="p4d-89-CX4" secondAttribute="bottom" constant="10" id="k4G-UA-Sx9"/>
+                            <constraint firstItem="e2Q-Qh-MwH" firstAttribute="leading" secondItem="GYW-AH-62g" secondAttribute="leading" constant="10" id="ymo-I0-Dqb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pMT-fW-qzL"/>
+                    <connections>
+                        <outlet property="MyMap" destination="rFF-cO-nsW" id="lmv-CB-qTs"/>
+                        <outlet property="scores_LST_scores" destination="eFv-kK-lwI" id="yXT-q1-DYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkf-Gh-UjA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2299" y="-410"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back" width="612" height="459"/>
+        <image name="moves" width="512" height="512"/>
+        <image name="timer" width="512" height="512"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
