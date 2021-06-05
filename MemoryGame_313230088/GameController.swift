@@ -110,7 +110,7 @@ class GameController: UIViewController {
     }
     @objc func updateTimer(){
         time += 1
-        game_BTN_timer.text = "Timer: "+String(time)
+        game_BTN_timer.text = String(time)
     }
 
 

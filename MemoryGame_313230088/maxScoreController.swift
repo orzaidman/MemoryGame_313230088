@@ -14,7 +14,6 @@ class maxScoreController:  UIViewController, UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         MyMap.showsUserLocation = true
-        MyMap.layer.cornerRadius = 50.0
         scoresList = DataManager.getDataFromtorage()
         addLocationsToMap()
         setupTable()
